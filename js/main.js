@@ -172,6 +172,10 @@ for (let i of x) {
   select.innerHTML += `<option value="${i}">${i}</option>`;
 }
 select.addEventListener("change", function () {
+  window.scroll({
+    top: 0,
+    behavior: "smooth"
+  })
   main_city.forEach((element) => {
     if (element.name.ar === this.value) {
       editNameAndDate(
@@ -198,10 +202,7 @@ select.addEventListener("change", function () {
         document.querySelector('.cityname').style.display = "block"
         document.querySelector('.note').style.display = "flex"
       }, 1);
-      window.scroll({
-        top: 0,
-        behavior: "smooth"
-      })
+      
     }
   });
 });
