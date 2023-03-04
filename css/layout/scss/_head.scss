@@ -3,7 +3,7 @@
   .media {
     .header {
       display: block;
-      padding: 55px 50px 10px 50px;
+      padding: 25px 50px 10px 50px;
       .cityname {
         color: text($bg-2);
         font-size: $fs-mdx;
@@ -19,12 +19,46 @@
         right: -900px;
         animation: to-left 1s forwards 0.1s;
       }
+      .note {
+        color: #ffda6a;
+        font-size: $fs-sm;
+        background-color: #332701;
+        border: 2px solid #664d03;
+        border-radius: 20px;
+        position: relative;
+        width: 600px;
+        text-align: center;
+        right: -900px;
+        display: flex;
+        line-height: 1;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 20px 20px 50px;
+        animation: to-left 1s forwards 0.2s;
+        .close{
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 200;
+          line-height: 1;
+          cursor: pointer;
+        }
+      }
       @media (max-width: 767px) {
         .cityname {
           font-size: $fs-md;
         }
         .date {
           font-size: $fs-sm;
+        }
+        .note {
+          font-size: calc($fs-sm - 10px) !important;
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          padding: 10px 20px 20px 20px;
+          span{
+            margin-bottom: 10px;
+            padding: 15px;
+          }
         }
       }
     }
