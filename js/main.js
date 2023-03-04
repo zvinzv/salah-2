@@ -215,6 +215,7 @@ function editNameAndDate(name, dates, fajir, sunsets, daur, mg) {
   magrib.innerHTML = mg + "<span class='time'>مساءً</span>";
 }
 
+
 document.querySelector('.close').addEventListener("click", function () {
   document.querySelector('.note').style.display = "none"
 })
