@@ -196,7 +196,7 @@ select.addEventListener("change", function () {
           document.querySelector('.box1234').style.display = "block"
           document.querySelector('.date').style.display = "block"
           document.querySelector('.cityname').style.display = "block"
-          document.querySelector('.note').style.display = "block"
+          document.querySelector('.note').style.display = "flex"
         }, 1);
       window.scroll({
         top: 0,
