@@ -16,7 +16,7 @@ let main_city = [
     },
     date: {
       day: new Date().toLocaleDateString("ar-iq", { weekday: "long" }),
-      num: new Date().toLocaleDateString("en-us"),
+      num: new Date().toLocaleDateString("ar-iq"),
     },
     location: {
       lant: "32.0217018",
@@ -31,7 +31,7 @@ let main_city = [
     },
     date: {
       day: new Date().toLocaleDateString("ar-iq", { weekday: "long" }),
-      num: new Date().toLocaleDateString("en-us"),
+      num: new Date().toLocaleDateString("ar-iq"),
     },
     location: {
       lant: "30.5312179",
@@ -46,7 +46,7 @@ let main_city = [
     },
     date: {
       day: new Date().toLocaleDateString("ar-iq", { weekday: "long" }),
-      num: new Date().toLocaleDateString("en-us"),
+      num: new Date().toLocaleDateString("ar-iq"),
     },
     location: {
       lant: "32.4732208",
@@ -61,7 +61,7 @@ let main_city = [
     },
     date: {
       day: new Date().toLocaleDateString("ar-iq", { weekday: "long" }),
-      num: new Date().toLocaleDateString("en-us"),
+      num: new Date().toLocaleDateString("ar-iq"),
     },
     location: {
       lant: "31.039336",
@@ -76,7 +76,7 @@ let main_city = [
     },
     date: {
       day: new Date().toLocaleDateString("ar-iq", { weekday: "long" }),
-      num: new Date().toLocaleDateString("en-us"),
+      num: new Date().toLocaleDateString("ar-iq"),
     },
     location: {
       lant: "32.60751",
@@ -91,7 +91,7 @@ let main_city = [
     },
     date: {
       day: new Date().toLocaleDateString("ar-iq", { weekday: "long" }),
-      num: new Date().toLocaleDateString("en-us"),
+      num: new Date().toLocaleDateString("ar-iq"),
     },
     location: {
       lant: "32.5129091",
@@ -106,7 +106,7 @@ let main_city = [
     },
     date: {
       day: new Date().toLocaleDateString("ar-iq", { weekday: "long" }),
-      num: new Date().toLocaleDateString("en-us"),
+      num: new Date().toLocaleDateString("ar-iq"),
     },
     location: {
       lant: "31.973471",
@@ -121,7 +121,7 @@ let main_city = [
     },
     date: {
       day: new Date().toLocaleDateString("ar-iq", { weekday: "long" }),
-      num: new Date().toLocaleDateString("en-us"),
+      num: new Date().toLocaleDateString("ar-iq"),
     },
     location: {
       lant: "31.8403761",
@@ -136,7 +136,7 @@ let main_city = [
     },
     date: {
       day: new Date().toLocaleDateString("ar-iq", { weekday: "long" }),
-      num: new Date().toLocaleDateString("en-us"),
+      num: new Date().toLocaleDateString("ar-iq"),
     },
     location: {
       lant: "31.3299899",
