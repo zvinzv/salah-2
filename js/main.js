@@ -181,23 +181,23 @@ select.addEventListener("change", function () {
         element.time.sunset,
         element.time.doher,
         element.time.maghrib
-        );
-        document.querySelector('.cityname').style.display = "none"
-        document.querySelector('.date').style.display = "none"
-        document.querySelector('.box1').style.display = "none"
-        document.querySelector('.box12').style.display = "none"
-        document.querySelector('.box123').style.display = "none"
-        document.querySelector('.box1234').style.display = "none"
-        document.querySelector('.note').style.display = "none"
-        setTimeout(() => {
-          document.querySelector('.box1').style.display = "block"
-          document.querySelector('.box12').style.display = "block"
-          document.querySelector('.box123').style.display = "block"
-          document.querySelector('.box1234').style.display = "block"
-          document.querySelector('.date').style.display = "block"
-          document.querySelector('.cityname').style.display = "block"
-          document.querySelector('.note').style.display = "flex"
-        }, 1);
+      );
+      document.querySelector('.cityname').style.display = "none"
+      document.querySelector('.date').style.display = "none"
+      document.querySelector('.box1').style.display = "none"
+      document.querySelector('.box12').style.display = "none"
+      document.querySelector('.box123').style.display = "none"
+      document.querySelector('.box1234').style.display = "none"
+      document.querySelector('.note').style.display = "none"
+      setTimeout(() => {
+        document.querySelector('.box1').style.display = "block"
+        document.querySelector('.box12').style.display = "block"
+        document.querySelector('.box123').style.display = "block"
+        document.querySelector('.box1234').style.display = "block"
+        document.querySelector('.date').style.display = "block"
+        document.querySelector('.cityname').style.display = "block"
+        document.querySelector('.note').style.display = "flex"
+      }, 1);
       window.scroll({
         top: 0,
         behavior: "smooth"
@@ -215,6 +215,6 @@ function editNameAndDate(name, dates, fajir, sunsets, daur, mg) {
   magrib.innerHTML = mg + "<span class='time'>مساءً</span>";
 }
 
-document.querySelector('.close').addEventListener("click", function (){
+document.querySelector('.close').addEventListener("click", function () {
   document.querySelector('.note').style.display = "none"
 })
