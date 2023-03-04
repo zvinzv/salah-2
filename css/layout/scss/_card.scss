@@ -41,6 +41,14 @@
           justify-content: center;
           font-size: $fs-md;
           font-weight: 900;
+          position: relative;
+          .time {
+            z-index: 0;
+            font-size: $fs-lx;
+            opacity: 0.1;
+            bottom: 0;
+            position: absolute;
+          }
         }
       }
     }
