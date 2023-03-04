@@ -1,5 +1,11 @@
 @use "./layout/scss/reset";
 @use "./layout/scss/global";
-@use "./layout/scss/card";
+@use "./layout/scss/nav";
 @use "./layout/scss/head";
+@use "./layout/scss/card";
+@use "./layout/scss/butn";
 @use "./layout/scss/var" as *;
+
+::-webkit-scrollbar{
+  width: 0;
+}

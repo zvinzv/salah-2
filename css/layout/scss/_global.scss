@@ -1,9 +1,15 @@
-body{
+@use "./var" as *;
 
+body {
+  font-family: "Amiri", serif;
+  background: linear-gradient(45deg, $bg-2, $bg-3);
+  min-height: 100vh;
+  max-height: fit-content;
 }
-ul{
-
+ul {
+  list-style: none;
 }
-a{
-
+a {
+  color: $fn-dark;
+  text-decoration: none;
 }

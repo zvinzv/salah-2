@@ -1,0 +1,46 @@
+@use "var" as *;
+.content {
+  .media {
+    .header {
+      display: block;
+      padding: 55px 50px 10px 50px;
+      .cityname {
+        color: text($bg-2);
+        font-size: $fs-mdx;
+        position: relative;
+        right: -900px;
+        text-shadow: 1px 1px 29px rgba(0, 0, 0, 0.391);
+        animation: to-left 1s forwards;
+      }
+      .date {
+        color: text($bg-2);
+        font-size: $fs-md;
+        position: relative;
+        right: -900px;
+        animation: to-left 1s forwards 0.1s;
+      }
+      @media (max-width: 767px) {
+        .cityname {
+          font-size: $fs-md;
+        }
+        .date {
+          font-size: $fs-sm;
+        }
+      }
+    }
+    hr {
+      width: 80%;
+      margin: 20px auto 40px auto;
+      padding: 0 50px;
+    }
+  }
+}
+
+@keyframes to-left {
+  0% {
+    right: -900px;
+  }
+  100% {
+    right: 0;
+  }
+}

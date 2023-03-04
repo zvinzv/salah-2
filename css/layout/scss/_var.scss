@@ -1,0 +1,23 @@
+$bg-1: #f2f2f2;
+$bg-2: #1e272e;
+$bg-3: #485460;
+
+$fn-dark: #212121;
+$fn-light: #eee;
+$fs-smxx: 0.5rem;
+$fs-smx: 1rem;
+$fs-sm: 2rem;
+$fs-md: 3rem;
+$fs-mdx: 4rem;
+$fs-mdxx: 5rem;
+$fs-l: 6rem;
+$fs-lx: 7rem;
+$fs-lxx: 8rem;
+
+@function text($color) {
+  @if (lightness($color) > 70) {
+    @return $fn-dark;
+  } @else {
+    @return $fn-light;
+  }
+}

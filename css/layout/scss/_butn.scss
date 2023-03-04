@@ -1,0 +1,43 @@
+@use "var" as *;
+.content {
+  @media (max-width: 767px) {
+    overflow-y: hidden;
+  }
+  .media {
+    select {
+      border: 1px solid $bg-1;
+      background-color: transparent;
+      color: text($bg-2);
+      font-size: $fs-sm;
+      line-height: 1;
+      padding: 15px 60px;
+      margin: 50px 0 0 0;
+      position: relative;
+      right: 50%;
+      transform: translateX(50%);
+      appearance: none;
+      opacity: 0;
+      animation: goTop2 0.85s 1s ease forwards;
+      cursor: pointer;
+      transition: 0.25s background-color, 0.25s color;
+      &:hover {
+        background-color: $bg-1;
+        color: text($bg-1);
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+@keyframes goTop2 {
+  0% {
+    bottom: -200px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
