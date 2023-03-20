@@ -160,10 +160,7 @@ main_city.forEach((element) => {
           element.time[key] = value;
         }
       }
-      setTimeout(() => {
-        document.querySelector(".overlay").remove()
-      }, 300);
-      // 
+      
     })
     .catch((reject) => {
       setTimeout(() => {
@@ -177,8 +174,11 @@ main_city.forEach((element) => {
           </ul>
         </nav>`
       }, 800);
-    });
+    })
 });
+setTimeout(() => {
+  document.querySelector(".overlay").remove()
+}, 300);
 x.sort()
 for (let i of x) {
   select.innerHTML += `<option value="${i}">${i}</option>`;
