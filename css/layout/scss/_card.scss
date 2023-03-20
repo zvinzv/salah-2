@@ -3,6 +3,7 @@
 .content {
   .media {
     .card {
+      user-select: none;
       padding: 0px 50px 50px 50px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

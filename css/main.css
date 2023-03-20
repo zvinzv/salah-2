@@ -1,3 +1,76 @@
+.overlay {
+  position: fixed;
+  background-color: #1e272e;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+}
+.overlay .rounded {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 10px solid rgba(255, 255, 255, 0.335);
+  border-bottom: 10px solid rgb(255, 255, 255);
+  animation: loop 2s infinite;
+  margin-left: -25px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.overlay nav {
+  position: fixed;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.overlay nav ul {
+  display: flex;
+}
+.overlay nav ul li {
+  margin: 0 10px;
+}
+.overlay nav ul li a {
+  line-height: 1;
+  display: block;
+  padding: 10px 10px;
+}
+.overlay nav ul li a i {
+  transition: 0.25s opacity;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  color: #f2f2f2;
+  opacity: 0.25;
+}
+.overlay nav ul li a:hover i {
+  opacity: 1;
+}
+.overlay span.not_found {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  color: #f2f2f2;
+  line-height: 2;
+  width: 90%;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  span.not_found {
+    top: 45% !important;
+  }
+}
+@keyframes loop {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -143,6 +216,9 @@ a {
   }
 }
 .content .media .card {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   padding: 0px 50px 50px 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

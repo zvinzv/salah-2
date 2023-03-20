@@ -160,11 +160,23 @@ main_city.forEach((element) => {
           element.time[key] = value;
         }
       }
-
+      setTimeout(() => {
+        document.querySelector(".overlay").remove()
+      }, 300);
       // 
     })
     .catch((reject) => {
-      console.log(error);
+      setTimeout(() => {
+        document.querySelector(".rounded").remove()
+        document.querySelector(".content").remove()
+        document.querySelector(".overlay").innerHTML = `<span class="not_found">الموقع لا يعمل حالياً, حاول مرة اخرى لاحقاَ او اتصل بنا!</span>
+        <nav>
+          <ul>
+            <li><a href="https://www.instagram.com/x748a/"><i class="fa-brands fa-square-instagram fa-fw"></i></a></li>
+            <li><a href="https://t.me/ZVINZV"><i class="fa-brands fa-telegram fa-fw"></i></a></li>
+          </ul>
+        </nav>`
+      }, 800);
     });
 });
 x.sort()
